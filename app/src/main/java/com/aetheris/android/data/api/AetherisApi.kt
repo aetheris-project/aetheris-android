@@ -1,6 +1,7 @@
 package com.aetheris.android.data.api
 
 import com.aetheris.android.data.model.*
+import kotlinx.serialization.Serializable
 import retrofit2.http.*
 
 interface AetherisApi {
