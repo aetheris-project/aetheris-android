@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aetheris Design System Colors -->
+    <color name="aetheris_background">#FF09090B</color>
+    <color name="aetheris_surface">#FF18181B</color>
+    <color name="aetheris_surface_elevated">#FF27272A</color>
+    <color name="aetheris_border">#FF3F3F46</color>
+    <color name="aetheris_text_primary">#FFFAFAFA</color>
+    <color name="aetheris_text_secondary">#FFA1A1AA</color>
+    <color name="aetheris_text_muted">#FF71717A</color>
+    <color name="aetheris_accent">#FF10B981</color>
+    <color name="aetheris_accent_darker">#FF059669</color>
+    <color name="aetheris_error">#FFEF4444</color>
+    <color name="aetheris_warning">#FFF59E0B</color>
+    <color name="aetheris_info">#FF3B82F6</color>
+    <color name="aetheris_success">#FF10B981</color>
+
+    <!-- Splash -->
+    <color name="aetheris_splash_bg">#FF09090B</color>
+
+    <!-- Status bar -->
+    <color name="status_operational">#FF10B981</color>
+    <color name="status_degraded">#FFF59E0B</color>
+    <color name="status_down">#FFEF4444</color>
+    <color name="status_unknown">#FF71717A</color>
+</resources>

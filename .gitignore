@@ -1,0 +1,51 @@
+# Built outputs
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# App build
+/app/build
+/app/release
+
+# Kotlin
+*.class
+*.jar
+*.war
+*.ear
+
+# Gradle
+.gradle/
+build/
+gradle/wrapper/gradle-wrapper.jar
+
+# Android
+*.apk
+*.aab
+*.ap_
+
+# Keystore
+*.jks
+*.keystore
+
+# Firebase
+google-services.json
+
+# Vercel
+.vercel/
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
