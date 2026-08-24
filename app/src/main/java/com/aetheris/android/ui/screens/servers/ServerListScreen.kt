@@ -181,7 +181,7 @@ private fun ServerCard(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Icon(
-                        imageVector = Icons.Filled.People,
+                        imageVector = Icons.Filled.Person,
                         contentDescription = null,
                         tint = AetherisColors.TextMuted,
                         modifier = Modifier.size(14.dp)
@@ -252,10 +252,10 @@ private fun getBarColor(percentage: Float, baseColor: androidx.compose.ui.graphi
 }
 
 private fun getServerIcon(game: String) = when {
-    game.contains("Minecraft", true) -> Icons.Filled.Dns
+    game.contains("Minecraft", true) -> Icons.Filled.List
     game.contains("Valheim", true) || game.contains("Rust", true) -> Icons.Filled.List
     game.contains("CS", true) || game.contains("Source", true) -> Icons.Filled.Settings
-    else -> Icons.Filled.Dns
+    else -> Icons.Filled.List
 }
 
 private fun getDemoServers() = listOf(

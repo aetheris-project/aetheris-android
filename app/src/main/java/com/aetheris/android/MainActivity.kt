@@ -13,6 +13,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.first
 import androidx.core.animation.doOnEnd
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.compose.rememberNavController
@@ -58,7 +59,7 @@ class MainActivity : ComponentActivity() {
 
             // Check auth state
             LaunchedEffect(Unit) {
-                isAuthenticated = preferencesManager.isAuthenticated()
+                isAuthenticated = preferencesManager.token.first() != null
                 // Small delay to let splash animation play
                 delay(3200)
                 keepSplash = false

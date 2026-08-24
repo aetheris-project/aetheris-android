@@ -70,6 +70,7 @@ dependencies {
     val composeBom = platform("androidx.compose:compose-bom:2026.08.00")
     implementation(composeBom)
     implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material:material-icons-core")
     // Use only the common icon set to reduce APK size and memory during compilation
     // material-icons-extended adds ~10MB and causes OOM during KSP/Hilt processing
     // To use extra icons, import them individually: import androidx.compose.material.icons.filled.ExtraIconName
@@ -80,7 +81,7 @@ dependencies {
 
     // Core
     implementation("androidx.core:core-ktx:1.19.0")
-    implementation("androidx.core:core-splashscreen:1.3.0")
+    implementation("androidx.core:core-splashscreen:1.2.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.11.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.11.0")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.11.0")

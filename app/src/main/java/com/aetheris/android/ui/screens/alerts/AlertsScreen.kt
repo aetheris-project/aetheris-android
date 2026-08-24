@@ -174,14 +174,14 @@ private fun getSeverityColor(severity: AlertSeverity) = when (severity) {
 }
 
 private fun getAlertIcon(type: AlertType) = when (type) {
-    AlertType.SERVER_DOWN -> Icons.Filled.Error
+    AlertType.SERVER_DOWN -> Icons.Filled.Warning
     AlertType.HIGH_CPU -> Icons.Filled.Star
     AlertType.HIGH_MEMORY -> Icons.Filled.Warning
-    AlertType.DISK_FULL -> Icons.Filled.Folder
-    AlertType.PAYMENT_FAILED -> Icons.Filled.Cancel
-    AlertType.INVOICE_OVERDUE -> Icons.Filled.Description
-    AlertType.NODE_OFFLINE -> Icons.Filled.Cloud
-    AlertType.BACKUP_FAILED -> Icons.Filled.Save
+    AlertType.DISK_FULL -> Icons.Filled.List
+    AlertType.PAYMENT_FAILED -> Icons.Filled.Close
+    AlertType.INVOICE_OVERDUE -> Icons.Filled.Info
+    AlertType.NODE_OFFLINE -> Icons.Filled.Refresh
+    AlertType.BACKUP_FAILED -> Icons.Filled.Star
 }
 
 private fun getDemoAlerts() = listOf(

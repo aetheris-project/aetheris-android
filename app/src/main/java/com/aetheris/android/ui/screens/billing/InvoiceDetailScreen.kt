@@ -132,7 +132,7 @@ fun InvoiceDetailScreen(
                     shape = RoundedCornerShape(12.dp),
                     colors = ButtonDefaults.buttonColors(containerColor = AetherisColors.Accent)
                 ) {
-                    Icon(Icons.Filled.CreditCard, contentDescription = null)
+                    Icon(Icons.Filled.Check, contentDescription = null)
                     Spacer(Modifier.width(8.dp))
                     Text("Pay Now", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
                 }

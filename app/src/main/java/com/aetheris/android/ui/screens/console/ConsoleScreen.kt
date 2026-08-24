@@ -51,11 +51,11 @@ fun ConsoleScreen(
                     actions = {
                         // Console type selector
                         IconButton(onClick = { showTypeSelector = true }) {
-                            Icon(Icons.Filled.Code, contentDescription = "Console type")
+                            Icon(Icons.Filled.Build, contentDescription = "Console type")
                         }
                         IconButton(onClick = { isFullscreen = !isFullscreen }) {
                             Icon(
-                                imageVector = if (isFullscreen) Icons.Filled.Close else Icons.Filled.OpenInNew,
+                                imageVector = if (isFullscreen) Icons.Filled.Close else Icons.Filled.ArrowForward,
                                 contentDescription = "Toggle fullscreen"
                             )
                         }
@@ -138,11 +138,11 @@ fun ConsoleScreen(
             title = { Text("Console Type") },
             text = {
                 Column {
-                    ConsoleTypeOption("Terminal", "Server console and SSH", Icons.Filled.Code, onClick = { showTypeSelector = false })
+                    ConsoleTypeOption("Terminal", "Server console and SSH", Icons.Filled.Build, onClick = { showTypeSelector = false })
                     Spacer(modifier = Modifier.height(8.dp))
                     ConsoleTypeOption("VNC", "Graphical remote desktop", Icons.Filled.Phone, onClick = { showTypeSelector = false })
                     Spacer(modifier = Modifier.height(8.dp))
-                    ConsoleTypeOption("File Manager", "Browse server files", Icons.Filled.Folder, onClick = { showTypeSelector = false })
+                    ConsoleTypeOption("File Manager", "Browse server files", Icons.Filled.List, onClick = { showTypeSelector = false })
                 }
             },
             confirmButton = {},
@@ -199,7 +199,7 @@ private fun ConsoleInputBar() {
             }
         ) {
             Icon(
-                imageVector = Icons.Filled.Send,
+                imageVector = Icons.Filled.Check,
                 contentDescription = "Send",
                 tint = AetherisColors.Accent
             )

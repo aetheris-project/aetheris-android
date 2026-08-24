@@ -76,7 +76,7 @@ fun ConnectScreen(
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        imageVector = Icons.Filled.Folder,
+                        imageVector = Icons.Filled.List,
                         contentDescription = "Aetheris",
                         tint = AetherisColors.Accent,
                         modifier = Modifier.size(40.dp)
@@ -126,7 +126,7 @@ fun ConnectScreen(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Icon(
-                            imageVector = Icons.Outlined.Share,
+                            imageVector = Icons.Filled.Check,
                             contentDescription = null,
                             tint = AetherisColors.TextSecondary,
                             modifier = Modifier.size(24.dp)
@@ -145,7 +145,7 @@ fun ConnectScreen(
                         }
                         Spacer(modifier = Modifier.weight(1f))
                         Icon(
-                            imageVector = Icons.Filled.ChevronRight,
+                            imageVector = Icons.Filled.KeyboardArrowRight,
                             contentDescription = null,
                             tint = AetherisColors.TextMuted
                         )
@@ -155,7 +155,7 @@ fun ConnectScreen(
                 Spacer(modifier = Modifier.height(16.dp))
 
                 // LAN Discovery Button
-                FilledCard(
+                Card(
                     modifier = Modifier
                         .fillMaxWidth()
                         .clickable {
@@ -166,7 +166,7 @@ fun ConnectScreen(
                             }
                         },
                     shape = RoundedCornerShape(16.dp),
-                    colors = CardDefaults.filledCardColors(
+                    colors = CardDefaults.cardColors(
                         containerColor = AetherisColors.Accent
                     )
                 ) {
@@ -310,7 +310,7 @@ fun ConnectScreen(
                         modifier = Modifier.fillMaxWidth(),
                         singleLine = true,
                         leadingIcon = {
-                            Icon(Icons.Outlined.Public, contentDescription = null)
+                            Icon(Icons.Filled.Home, contentDescription = null)
                         }
                     )
                     Spacer(modifier = Modifier.height(8.dp))

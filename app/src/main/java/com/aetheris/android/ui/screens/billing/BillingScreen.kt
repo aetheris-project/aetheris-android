@@ -56,7 +56,7 @@ fun BillingScreen(
                 indicator = { tabPositions ->
                     if (selectedTab < tabPositions.size) {
                         TabRowDefaults.SecondaryIndicator(
-                            Modifier.tabIndicatorOffset(tabPositions[selectedTab]),
+                            Modifier,
                             color = AetherisColors.Accent
                         )
                     }
@@ -250,19 +250,19 @@ private fun getInvoiceStatusColor(status: InvoiceStatus) = when (status) {
 
 private fun getInvoiceIcon(status: InvoiceStatus) = when (status) {
     InvoiceStatus.PAID -> Icons.Filled.CheckCircle
-    InvoiceStatus.PENDING -> Icons.Outlined.DateRange
+    InvoiceStatus.PENDING -> Icons.Filled.Star
     InvoiceStatus.OVERDUE -> Icons.Filled.Warning
-    InvoiceStatus.DRAFT -> Icons.Outlined.Edit
-    InvoiceStatus.CANCELLED -> Icons.Filled.Cancel
+    InvoiceStatus.DRAFT -> Icons.Filled.Settings
+    InvoiceStatus.CANCELLED -> Icons.Filled.Close
     InvoiceStatus.REFUNDED -> Icons.Filled.Refresh
 }
 
 private fun getServiceIcon(type: ServiceType) = when (type) {
-    ServiceType.GAME_SERVER -> Icons.Filled.Folder
-    ServiceType.VPS -> Icons.Filled.Folder
+    ServiceType.GAME_SERVER -> Icons.Filled.List
+    ServiceType.VPS -> Icons.Filled.List
     ServiceType.DEDICATED -> Icons.Filled.Lock
-    ServiceType.WEB_HOSTING -> Icons.Filled.Public
-    ServiceType.DOMAIN -> Icons.Filled.Link
+    ServiceType.WEB_HOSTING -> Icons.Filled.Home
+    ServiceType.DOMAIN -> Icons.Filled.Check
     ServiceType.ADDON -> Icons.Filled.Star
 }
 

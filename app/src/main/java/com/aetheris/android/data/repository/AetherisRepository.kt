@@ -3,6 +3,8 @@ package com.aetheris.android.data.repository
 import com.aetheris.android.data.api.AetherisApi
 import com.aetheris.android.data.local.PreferencesManager
 import com.aetheris.android.data.model.*
+import com.aetheris.android.data.api.ConsoleToken
+import com.aetheris.android.data.api.AppSettings
 import kotlinx.coroutines.flow.first
 import javax.inject.Inject
 import javax.inject.Singleton

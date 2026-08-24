@@ -57,14 +57,14 @@ fun SettingsScreen(
             SectionHeader("Connection")
             SettingsCard {
                 SettingsItem(
-                    icon = Icons.Outlined.Language,
+                    icon = Icons.Filled.Build,
                     title = "Server URL",
                     subtitle = "aetheris-panel.vercel.app",
-                    trailing = { Icon(Icons.Filled.ChevronRight, contentDescription = null, tint = AetherisColors.TextMuted) }
+                    trailing = { Icon(Icons.Filled.KeyboardArrowRight, contentDescription = null, tint = AetherisColors.TextMuted) }
                 )
                 HorizontalDivider(color = AetherisColors.BorderSubtle)
                 SettingsItem(
-                    icon = Icons.Outlined.Wifi,
+                    icon = Icons.Filled.Refresh,
                     title = "LAN Discovery",
                     subtitle = "Auto-discover panels on local network",
                     trailing = {
@@ -77,10 +77,10 @@ fun SettingsScreen(
                 )
                 HorizontalDivider(color = AetherisColors.BorderSubtle)
                 SettingsItem(
-                    icon = Icons.Outlined.Refresh,
+                    icon = Icons.Filled.Refresh,
                     title = "Refresh Interval",
                     subtitle = "Every 30 seconds",
-                    trailing = { Icon(Icons.Filled.ChevronRight, contentDescription = null, tint = AetherisColors.TextMuted) }
+                    trailing = { Icon(Icons.Filled.KeyboardArrowRight, contentDescription = null, tint = AetherisColors.TextMuted) }
                 )
             }
 
@@ -88,7 +88,7 @@ fun SettingsScreen(
             SectionHeader("Appearance")
             SettingsCard {
                 SettingsItem(
-                    icon = Icons.Outlined.DarkMode,
+                    icon = Icons.Filled.Refresh,
                     title = "Dark Mode",
                     subtitle = "Use dark theme",
                     trailing = {
@@ -101,10 +101,10 @@ fun SettingsScreen(
                 )
                 HorizontalDivider(color = AetherisColors.BorderSubtle)
                 SettingsItem(
-                    icon = Icons.Outlined.Language,
+                    icon = Icons.Filled.Build,
                     title = "Language",
                     subtitle = "English",
-                    trailing = { Icon(Icons.Filled.ChevronRight, contentDescription = null, tint = AetherisColors.TextMuted) }
+                    trailing = { Icon(Icons.Filled.KeyboardArrowRight, contentDescription = null, tint = AetherisColors.TextMuted) }
                 )
             }
 
@@ -112,7 +112,7 @@ fun SettingsScreen(
             SectionHeader("Notifications")
             SettingsCard {
                 SettingsItem(
-                    icon = Icons.Outlined.Notifications,
+                    icon = Icons.Filled.Notifications,
                     title = "Push Notifications",
                     subtitle = "Server alerts and status changes",
                     trailing = {
@@ -125,7 +125,7 @@ fun SettingsScreen(
                 )
                 HorizontalDivider(color = AetherisColors.BorderSubtle)
                 SettingsItem(
-                    icon = Icons.Outlined.Warning,
+                    icon = Icons.Filled.Warning,
                     title = "Critical Alerts",
                     subtitle = "Server down, high CPU/memory",
                     trailing = {
@@ -142,31 +142,31 @@ fun SettingsScreen(
             SectionHeader("About")
             SettingsCard {
                 SettingsItem(
-                    icon = Icons.Outlined.Info,
+                    icon = Icons.Filled.Info,
                     title = "Version",
                     subtitle = "1.0.0 (Build 1)"
                 )
                 HorizontalDivider(color = AetherisColors.BorderSubtle)
                 SettingsItem(
-                    icon = Icons.Outlined.Code,
+                    icon = Icons.Filled.Info,
                     title = "License",
                     subtitle = "AGPL-3.0"
                 )
                 HorizontalDivider(color = AetherisColors.BorderSubtle)
                 SettingsItem(
-                    icon = Icons.Outlined.Group,
+                    icon = Icons.Filled.Person,
                     title = "Contributing",
                     subtitle = "Pull requests welcome"
                 )
                 HorizontalDivider(color = AetherisColors.BorderSubtle)
                 SettingsItem(
-                    icon = Icons.Outlined.Info,
+                    icon = Icons.Filled.Info,
                     title = "Support",
                     subtitle = "discord.gg/6GcfebuT2A"
                 )
                 HorizontalDivider(color = AetherisColors.BorderSubtle)
                 SettingsItem(
-                    icon = Icons.Outlined.Public,
+                    icon = Icons.Filled.Home,
                     title = "Website",
                     subtitle = "aetheris-web.vercel.app"
                 )
@@ -181,7 +181,7 @@ fun SettingsScreen(
                 shape = RoundedCornerShape(12.dp),
                 colors = ButtonDefaults.outlinedButtonColors(contentColor = AetherisColors.Error)
             ) {
-                Icon(Icons.Filled.Logout, contentDescription = null, modifier = Modifier.size(18.dp))
+                Icon(Icons.Filled.ExitToApp, contentDescription = null, modifier = Modifier.size(18.dp))
                 Spacer(Modifier.width(8.dp))
                 Text("Sign Out")
             }

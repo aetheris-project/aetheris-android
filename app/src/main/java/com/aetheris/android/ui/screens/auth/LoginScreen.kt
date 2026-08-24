@@ -100,7 +100,7 @@ fun LoginScreen(
                 contentAlignment = Alignment.Center
             ) {
                 Icon(
-                    imageVector = Icons.Filled.Folder,
+                    imageVector = Icons.Filled.List,
                     contentDescription = "Aetheris",
                     tint = AetherisColors.Accent,
                     modifier = Modifier.size(32.dp)
@@ -135,7 +135,7 @@ fun LoginScreen(
                 modifier = Modifier.fillMaxWidth(),
                 singleLine = true,
                 leadingIcon = {
-                    Icon(Icons.Outlined.Email, contentDescription = null)
+                    Icon(Icons.Filled.Info, contentDescription = null)
                 },
                 keyboardOptions = KeyboardOptions(
                     keyboardType = KeyboardType.Email,
@@ -163,12 +163,12 @@ fun LoginScreen(
                 singleLine = true,
                 visualTransformation = if (showPassword) VisualTransformation.None else PasswordVisualTransformation(),
                 leadingIcon = {
-                    Icon(Icons.Outlined.Lock, contentDescription = null)
+                    Icon(Icons.Filled.Warning, contentDescription = null)
                 },
                 trailingIcon = {
                     IconButton(onClick = { showPassword = !showPassword }) {
                         Icon(
-                            imageVector = if (showPassword) Icons.Filled.VisibilityOff else Icons.Filled.Visibility,
+                            imageVector = if (showPassword) Icons.Filled.Close else Icons.Filled.Search,
                             contentDescription = if (showPassword) "Hide password" else "Show password",
                             tint = AetherisColors.TextMuted
                         )
@@ -303,7 +303,7 @@ fun LoginScreen(
                     border = ButtonDefaults.outlinedButtonBorder(enabled = true)
                 ) {
                     Icon(
-                        imageVector = Icons.Outlined.Star,
+                        imageVector = Icons.Filled.Star,
                         contentDescription = "Google",
                         tint = AetherisColors.TextSecondary
                     )
@@ -321,7 +321,7 @@ fun LoginScreen(
                     )
                 ) {
                     Icon(
-                        imageVector = Icons.Outlined.Forum,
+                        imageVector = Icons.Filled.Build,
                         contentDescription = "Discord",
                         tint = AetherisColors.TextSecondary
                     )
@@ -339,7 +339,7 @@ fun LoginScreen(
                     )
                 ) {
                     Icon(
-                        imageVector = Icons.Outlined.Phone,
+                        imageVector = Icons.Filled.Person,
                         contentDescription = "Apple",
                         tint = AetherisColors.TextSecondary
                     )

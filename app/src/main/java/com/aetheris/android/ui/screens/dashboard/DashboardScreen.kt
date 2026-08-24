@@ -81,7 +81,7 @@ fun DashboardScreen(
                         modifier = Modifier.weight(1f),
                         title = "Active Servers",
                         value = "${stats.activeServers}",
-                        icon = Icons.Filled.Folder,
+                        icon = Icons.Filled.List,
                         color = AetherisColors.Success,
                         trend = "+3"
                     )
@@ -89,7 +89,7 @@ fun DashboardScreen(
                         modifier = Modifier.weight(1f),
                         title = "Nodes",
                         value = "${stats.totalNodes}",
-                        icon = Icons.Filled.Folder,
+                        icon = Icons.Filled.List,
                         color = AetherisColors.Info,
                         trend = "+1"
                     )
@@ -113,7 +113,7 @@ fun DashboardScreen(
                         modifier = Modifier.weight(1f),
                         title = "Clients",
                         value = "${stats.totalClients}",
-                        icon = Icons.Filled.Group,
+                        icon = Icons.Filled.Person,
                         color = AetherisColors.Warning,
                         trend = "+24"
                     )
@@ -238,13 +238,13 @@ fun DashboardScreen(
                 ) {
                     QuickActionChip(
                         label = "Servers",
-                        icon = Icons.Filled.Folder,
+                        icon = Icons.Filled.List,
                         onClick = { onNavigate(Screen.Servers.route) },
                         modifier = Modifier.weight(1f)
                     )
                     QuickActionChip(
                         label = "Billing",
-                        icon = Icons.Filled.Description,
+                        icon = Icons.Filled.Info,
                         onClick = { onNavigate(Screen.Billing.route) },
                         modifier = Modifier.weight(1f)
                     )

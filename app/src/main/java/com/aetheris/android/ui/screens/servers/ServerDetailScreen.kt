@@ -57,7 +57,7 @@ fun ServerDetailScreen(
                 },
                 actions = {
                     IconButton(onClick = onConsoleClick) {
-                        Icon(Icons.Filled.Code, contentDescription = "Console")
+                        Icon(Icons.Filled.Build, contentDescription = "Console")
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
@@ -88,7 +88,7 @@ fun ServerDetailScreen(
                             contentAlignment = Alignment.Center
                         ) {
                             Icon(
-                                imageVector = Icons.Filled.Dns,
+                                imageVector = Icons.Filled.List,
                                 contentDescription = null,
                                 tint = getStatusColor(server.status),
                                 modifier = Modifier.size(24.dp)
@@ -139,7 +139,7 @@ fun ServerDetailScreen(
                     Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         ActionButton(
                             label = "Console",
-                            icon = Icons.Filled.Code,
+                            icon = Icons.Filled.Build,
                             color = AetherisColors.Info,
                             onClick = onConsoleClick,
                             modifier = Modifier.weight(1f)
@@ -158,14 +158,14 @@ fun ServerDetailScreen(
                     Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         ActionButton(
                             label = "Suspend",
-                            icon = Icons.Filled.Pause,
+                            icon = Icons.Filled.Close,
                             color = AetherisColors.TextSecondary,
                             onClick = { },
                             modifier = Modifier.weight(1f)
                         )
                         ActionButton(
                             label = "Stop",
-                            icon = Icons.Filled.Stop,
+                            icon = Icons.Filled.Close,
                             color = AetherisColors.Error,
                             onClick = { showStopDialog = true },
                             modifier = Modifier.weight(1f)
