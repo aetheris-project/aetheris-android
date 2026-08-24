@@ -18,6 +18,7 @@ import com.aetheris.android.ui.screens.billing.BillingScreen
 import com.aetheris.android.ui.screens.billing.InvoiceDetailScreen
 import com.aetheris.android.ui.screens.alerts.AlertsScreen
 import com.aetheris.android.ui.screens.settings.SettingsScreen
+import com.aetheris.android.ui.screens.install.InstallPanelScreen
 
 sealed class Screen(val route: String) {
     data object Connect : Screen("connect")
@@ -38,6 +39,7 @@ sealed class Screen(val route: String) {
     }
     data object Alerts : Screen("alerts")
     data object Settings : Screen("settings")
+    data object Install : Screen("install")
 }
 
 val bottomNavItems = listOf(
@@ -95,6 +97,9 @@ fun AetherisNavGraph(
                     navController.navigate(Screen.Login.createRoute(url)) {
                         popUpTo(Screen.Connect.route) { inclusive = true }
                     }
+                },
+                onInstallClick = {
+                    navController.navigate(Screen.Install.route)
                 }
             )
         }
@@ -195,6 +200,17 @@ fun AetherisNavGraph(
                 onLogout = {
                     navController.navigate(Screen.Connect.route) {
                         popUpTo(0) { inclusive = true }
+                    }
+                }
+            )
+        }
+
+        composable(Screen.Install.route) {
+            InstallPanelScreen(
+                onBack = { navController.popBackStack() },
+                onComplete = { url ->
+                    navController.navigate(Screen.Login.createRoute(url)) {
+                        popUpTo(Screen.Install.route) { inclusive = true }
                     }
                 }
             )

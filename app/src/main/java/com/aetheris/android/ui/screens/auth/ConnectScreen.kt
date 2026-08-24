@@ -31,7 +31,8 @@ import kotlinx.coroutines.launch
 @Composable
 fun ConnectScreen(
     onServerSelected: (String) -> Unit,
-    onConnectManually: (String) -> Unit
+    onConnectManually: (String) -> Unit,
+    onInstallClick: () -> Unit = {}
 ) {
     var showManualDialog by remember { mutableStateOf(false) }
     var manualUrl by remember { mutableStateOf("") }
@@ -276,9 +277,25 @@ fun ConnectScreen(
 
                 Spacer(modifier = Modifier.height(48.dp))
 
+                Spacer(modifier = Modifier.height(24.dp))
+
+                // Install button
+                OutlinedButton(
+                    onClick = onInstallClick,
+                    modifier = Modifier.fillMaxWidth().height(48.dp),
+                    shape = RoundedCornerShape(12.dp),
+                    colors = ButtonDefaults.outlinedButtonColors(contentColor = AetherisColors.Accent)
+                ) {
+                    Icon(Icons.Filled.Add, contentDescription = null, modifier = Modifier.size(18.dp))
+                    Spacer(Modifier.width(8.dp))
+                    Text("Install Aetheris on a Server")
+                }
+
+                Spacer(modifier = Modifier.height(16.dp))
+
                 // Footer links
                 Text(
-                    text = "No panel? Install Aetheris on your server",
+                    text = "Install Aetheris on your own server via SSH",
                     style = MaterialTheme.typography.bodySmall,
                     color = AetherisColors.TextMuted,
                     textAlign = TextAlign.Center
