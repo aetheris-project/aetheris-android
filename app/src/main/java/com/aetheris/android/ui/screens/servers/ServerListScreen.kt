@@ -252,9 +252,9 @@ private fun getBarColor(percentage: Float, baseColor: androidx.compose.ui.graphi
 }
 
 private fun getServerIcon(game: String) = when {
-    game.contains("Minecraft", true) -> Icons.Filled.Terrain
-    game.contains("Valheim", true) || game.contains("Rust", true) -> Icons.Filled.DensitySmall
-    game.contains("CS", true) || game.contains("Source", true) -> Icons.Filled.SportsEsports
+    game.contains("Minecraft", true) -> Icons.Filled.Dns
+    game.contains("Valheim", true) || game.contains("Rust", true) -> Icons.Filled.List
+    game.contains("CS", true) || game.contains("Source", true) -> Icons.Filled.Settings
     else -> Icons.Filled.Dns
 }
 

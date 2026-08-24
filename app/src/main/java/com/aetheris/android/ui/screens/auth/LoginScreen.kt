@@ -100,7 +100,7 @@ fun LoginScreen(
                 contentAlignment = Alignment.Center
             ) {
                 Icon(
-                    imageVector = Icons.Filled.Dns,
+                    imageVector = Icons.Filled.Folder,
                     contentDescription = "Aetheris",
                     tint = AetherisColors.Accent,
                     modifier = Modifier.size(32.dp)
@@ -303,7 +303,7 @@ fun LoginScreen(
                     border = ButtonDefaults.outlinedButtonBorder(enabled = true)
                 ) {
                     Icon(
-                        imageVector = Icons.Outlined.Bolt,
+                        imageVector = Icons.Outlined.Star,
                         contentDescription = "Google",
                         tint = AetherisColors.TextSecondary
                     )
@@ -339,7 +339,7 @@ fun LoginScreen(
                     )
                 ) {
                     Icon(
-                        imageVector = Icons.Outlined.PhoneIphone,
+                        imageVector = Icons.Outlined.Phone,
                         contentDescription = "Apple",
                         tint = AetherisColors.TextSecondary
                     )

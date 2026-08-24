@@ -51,11 +51,11 @@ fun ConsoleScreen(
                     actions = {
                         // Console type selector
                         IconButton(onClick = { showTypeSelector = true }) {
-                            Icon(Icons.Filled.Terminal, contentDescription = "Console type")
+                            Icon(Icons.Filled.Code, contentDescription = "Console type")
                         }
                         IconButton(onClick = { isFullscreen = !isFullscreen }) {
                             Icon(
-                                imageVector = if (isFullscreen) Icons.Filled.FullscreenExit else Icons.Filled.Fullscreen,
+                                imageVector = if (isFullscreen) Icons.Filled.Close else Icons.Filled.OpenInNew,
                                 contentDescription = "Toggle fullscreen"
                             )
                         }
@@ -138,9 +138,9 @@ fun ConsoleScreen(
             title = { Text("Console Type") },
             text = {
                 Column {
-                    ConsoleTypeOption("Terminal", "Server console and SSH", Icons.Filled.Terminal, onClick = { showTypeSelector = false })
+                    ConsoleTypeOption("Terminal", "Server console and SSH", Icons.Filled.Code, onClick = { showTypeSelector = false })
                     Spacer(modifier = Modifier.height(8.dp))
-                    ConsoleTypeOption("VNC", "Graphical remote desktop", Icons.Filled.DesktopWindows, onClick = { showTypeSelector = false })
+                    ConsoleTypeOption("VNC", "Graphical remote desktop", Icons.Filled.Phone, onClick = { showTypeSelector = false })
                     Spacer(modifier = Modifier.height(8.dp))
                     ConsoleTypeOption("File Manager", "Browse server files", Icons.Filled.Folder, onClick = { showTypeSelector = false })
                 }

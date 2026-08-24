@@ -81,7 +81,7 @@ fun DashboardScreen(
                         modifier = Modifier.weight(1f),
                         title = "Active Servers",
                         value = "${stats.activeServers}",
-                        icon = Icons.Filled.Dns,
+                        icon = Icons.Filled.Folder,
                         color = AetherisColors.Success,
                         trend = "+3"
                     )
@@ -89,7 +89,7 @@ fun DashboardScreen(
                         modifier = Modifier.weight(1f),
                         title = "Nodes",
                         value = "${stats.totalNodes}",
-                        icon = Icons.Filled.Storage,
+                        icon = Icons.Filled.Folder,
                         color = AetherisColors.Info,
                         trend = "+1"
                     )
@@ -105,7 +105,7 @@ fun DashboardScreen(
                         modifier = Modifier.weight(1f),
                         title = "Revenue",
                         value = formatCurrency(stats.monthlyRevenue),
-                        icon = Icons.Filled.AttachMoney,
+                        icon = Icons.Filled.Star,
                         color = AetherisColors.Accent,
                         trend = "+18.4%"
                     )
@@ -113,7 +113,7 @@ fun DashboardScreen(
                         modifier = Modifier.weight(1f),
                         title = "Clients",
                         value = "${stats.totalClients}",
-                        icon = Icons.Filled.People,
+                        icon = Icons.Filled.Group,
                         color = AetherisColors.Warning,
                         trend = "+24"
                     )
@@ -238,13 +238,13 @@ fun DashboardScreen(
                 ) {
                     QuickActionChip(
                         label = "Servers",
-                        icon = Icons.Filled.Dns,
+                        icon = Icons.Filled.Folder,
                         onClick = { onNavigate(Screen.Servers.route) },
                         modifier = Modifier.weight(1f)
                     )
                     QuickActionChip(
                         label = "Billing",
-                        icon = Icons.Filled.Receipt,
+                        icon = Icons.Filled.Description,
                         onClick = { onNavigate(Screen.Billing.route) },
                         modifier = Modifier.weight(1f)
                     )

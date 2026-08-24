@@ -57,7 +57,7 @@ fun ServerDetailScreen(
                 },
                 actions = {
                     IconButton(onClick = onConsoleClick) {
-                        Icon(Icons.Filled.Terminal, contentDescription = "Console")
+                        Icon(Icons.Filled.Code, contentDescription = "Console")
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
@@ -139,14 +139,14 @@ fun ServerDetailScreen(
                     Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         ActionButton(
                             label = "Console",
-                            icon = Icons.Filled.Terminal,
+                            icon = Icons.Filled.Code,
                             color = AetherisColors.Info,
                             onClick = onConsoleClick,
                             modifier = Modifier.weight(1f)
                         )
                         ActionButton(
                             label = "Restart",
-                            icon = Icons.Filled.RestartAlt,
+                            icon = Icons.Filled.Refresh,
                             color = AetherisColors.Warning,
                             onClick = { showRestartDialog = true },
                             modifier = Modifier.weight(1f)

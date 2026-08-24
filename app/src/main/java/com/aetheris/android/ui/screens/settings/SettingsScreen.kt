@@ -64,7 +64,7 @@ fun SettingsScreen(
                 )
                 HorizontalDivider(color = AetherisColors.BorderSubtle)
                 SettingsItem(
-                    icon = Icons.Outlined.WifiFind,
+                    icon = Icons.Outlined.Wifi,
                     title = "LAN Discovery",
                     subtitle = "Auto-discover panels on local network",
                     trailing = {
@@ -160,7 +160,7 @@ fun SettingsScreen(
                 )
                 HorizontalDivider(color = AetherisColors.BorderSubtle)
                 SettingsItem(
-                    icon = Icons.Outlined.Support,
+                    icon = Icons.Outlined.Info,
                     title = "Support",
                     subtitle = "discord.gg/6GcfebuT2A"
                 )

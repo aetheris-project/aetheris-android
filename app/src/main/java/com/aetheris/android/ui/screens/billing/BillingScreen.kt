@@ -250,20 +250,20 @@ private fun getInvoiceStatusColor(status: InvoiceStatus) = when (status) {
 
 private fun getInvoiceIcon(status: InvoiceStatus) = when (status) {
     InvoiceStatus.PAID -> Icons.Filled.CheckCircle
-    InvoiceStatus.PENDING -> Icons.Outlined.Schedule
+    InvoiceStatus.PENDING -> Icons.Outlined.DateRange
     InvoiceStatus.OVERDUE -> Icons.Filled.Warning
     InvoiceStatus.DRAFT -> Icons.Outlined.Edit
     InvoiceStatus.CANCELLED -> Icons.Filled.Cancel
-    InvoiceStatus.REFUNDED -> Icons.Filled.Replay
+    InvoiceStatus.REFUNDED -> Icons.Filled.Refresh
 }
 
 private fun getServiceIcon(type: ServiceType) = when (type) {
-    ServiceType.GAME_SERVER -> Icons.Filled.Dns
-    ServiceType.VPS -> Icons.Filled.Storage
-    ServiceType.DEDICATED -> Icons.Filled.Security
-    ServiceType.WEB_HOSTING -> Icons.Filled.Language
-    ServiceType.DOMAIN -> Icons.Filled.Hyperlink
-    ServiceType.ADDON -> Icons.Filled.Extension
+    ServiceType.GAME_SERVER -> Icons.Filled.Folder
+    ServiceType.VPS -> Icons.Filled.Folder
+    ServiceType.DEDICATED -> Icons.Filled.Lock
+    ServiceType.WEB_HOSTING -> Icons.Filled.Public
+    ServiceType.DOMAIN -> Icons.Filled.Link
+    ServiceType.ADDON -> Icons.Filled.Star
 }
 
 private fun formatCurrency(amount: Double): String {

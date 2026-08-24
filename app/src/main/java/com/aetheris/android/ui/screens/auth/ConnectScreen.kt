@@ -76,7 +76,7 @@ fun ConnectScreen(
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        imageVector = Icons.Filled.Dns,
+                        imageVector = Icons.Filled.Folder,
                         contentDescription = "Aetheris",
                         tint = AetherisColors.Accent,
                         modifier = Modifier.size(40.dp)
@@ -126,7 +126,7 @@ fun ConnectScreen(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Icon(
-                            imageVector = Icons.Outlined.Link,
+                            imageVector = Icons.Outlined.Share,
                             contentDescription = null,
                             tint = AetherisColors.TextSecondary,
                             modifier = Modifier.size(24.dp)
@@ -184,7 +184,7 @@ fun ConnectScreen(
                             )
                         } else {
                             Icon(
-                                imageVector = Icons.Filled.WifiFind,
+                                imageVector = Icons.Filled.Search,
                                 contentDescription = null,
                                 tint = MaterialTheme.colorScheme.onPrimary,
                                 modifier = Modifier.size(24.dp)
@@ -310,7 +310,7 @@ fun ConnectScreen(
                         modifier = Modifier.fillMaxWidth(),
                         singleLine = true,
                         leadingIcon = {
-                            Icon(Icons.Outlined.Language, contentDescription = null)
+                            Icon(Icons.Outlined.Public, contentDescription = null)
                         }
                     )
                     Spacer(modifier = Modifier.height(8.dp))

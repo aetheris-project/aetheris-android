@@ -70,7 +70,9 @@ dependencies {
     val composeBom = platform("androidx.compose:compose-bom:2026.08.00")
     implementation(composeBom)
     implementation("androidx.compose.material3:material3")
-    implementation("androidx.compose.material:material-icons-extended")
+    // Use only the common icon set to reduce APK size and memory during compilation
+    // material-icons-extended adds ~10MB and causes OOM during KSP/Hilt processing
+    // To use extra icons, import them individually: import androidx.compose.material.icons.filled.ExtraIconName
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-tooling-preview")
     debugImplementation("androidx.compose.ui:ui-tooling")
