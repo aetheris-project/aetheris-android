@@ -48,6 +48,11 @@ object AetherisColors {
     val LightTextMuted = Color(0xFF94A3B8)
 }
 
+// Top-level color shortcuts for use outside of Composable context
+val AetherisAccent = AetherisColors.Accent
+val AetherisBackground = AetherisColors.Background
+val AetherisSurface = AetherisColors.Surface
+
 private val DarkColorScheme = darkColorScheme(
     primary = AetherisColors.Accent,
     onPrimary = Color.White,

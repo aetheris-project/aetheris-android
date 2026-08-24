@@ -8,7 +8,11 @@
         <item name="android:windowLightNavigationBar">false</item>
     </style>
 
-    <style name="Theme.Aetheris.Splash" parent="Theme.Aetheris">
-        <item name="android:windowSplashScreenBackground">@color/aetheris_splash_bg</item>
+    <style name="Theme.Aetheris.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/aetheris_splash_bg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/aetheris_splash_bg</item>
+        <item name="postSplashScreenTheme">@style/Theme.Aetheris</item>
+        <item name="windowSplashScreenAnimationDuration">1200</item>
     </style>
 </resources>
